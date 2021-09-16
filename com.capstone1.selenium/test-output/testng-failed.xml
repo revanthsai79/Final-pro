@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.capstone1.selenium.testclass">
+        <methods>
+          <include name="enter_registered_username_and_password"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="title"/>
+          <include name="terminateBrowser"/>
+          <include name="checking_the_contact"/>
+          <include name="checking_the_content"/>
+          <include name="checking_the_name"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.capstone1.selenium.testclass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,18 @@
+---
+- name: Web page hosting
+  hosts: localhost
+  tasks:
+          - name: install httpd packages
+            yum:
+                    name: httpd
+                    state: latest
+          - name: start and enable httpd
+            service:
+                    name: httpd
+                    enabled: true
+                    state: started
+          - name: copy the html page
+            copy:
+                    src: /home/ec2-user/webpageproject/index.html
+                    dest: /var/www/html
+...
